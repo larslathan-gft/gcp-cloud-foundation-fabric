@@ -16,12 +16,12 @@
 
 global:
   # use `gcloud beta billing accounts list` to populate
-  billing_account: ABCDEF-0123456-ABCDEF
+  billing_account: 0165DB-5B1390-13584E
   organization:
     # use `gcloud organizations list`` to populate
-    domain: fast-test-00.example.com
-    id: 1234567890
-    customer_id: abcd123456
+    domain: gftspain-sandbox.dev
+    id: 109549842935
+    customer_id: C02mp7y17
 observability:
   project_id: $project_ids:log-0
   number: $project_numbers:log-0
@@ -37,12 +37,12 @@ projects:
 context:
   # you can populate context variables here for use in YAML replacements
   email_addresses:
-    gcp-organization-admins: gcp-organization-admins@example.com
+    gcp-organization-admins: gcp-organization-admins@gftspain-sandbox.dev
   iam_principals:
     # this is the default group used in bootstrap, initial user must be a member
-    gcp-organization-admins: group:gcp-organization-admins@example.com
+    gcp-organization-admins: group:gcp-organization-admins@gftspain-sandbox.dev
   locations:
-    primary: europe-west1
+    primary: europe-southwest1
 output_files:
   # local path is optional but recommended when starting
   local_path: ~/fast-config/fast-test-00
