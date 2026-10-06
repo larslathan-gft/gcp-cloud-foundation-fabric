@@ -14,15 +14,15 @@
 
 # yaml-language-server: $schema=../../../schemas/firewall-policy.schema.json
 
-parent_id: $folder_ids:networking
+parent_id: folders/703628949265
 attachments:
-  networking: $folder_ids:networking
+  networking: folders/703628949265
 name: network-policy
 ingress_rules:
   allow-healthchecks:
     description: Enable SSH, HTTP and HTTPS healthchecks
     priority: 1001
-    # enable_logging: true
+    enable_logging: true
     match:
       source_ranges:
         - $cidr_ranges_sets:healthchecks
@@ -44,7 +44,7 @@ ingress_rules:
   allow-icmp:
     description: Enable ICMP
     priority: 1003
-    # enable_logging: true
+    enable_logging: true
     match:
       source_ranges:
         - 0.0.0.0/0
@@ -54,7 +54,7 @@ ingress_rules:
   allow-nat-ranges:
     description: Enable NAT ranges for VPC serverless connector
     priority: 1004
-    # enable_logging: true
+    enable_logging: true
     match:
       source_ranges:
         - 107.178.230.64/26
@@ -63,7 +63,7 @@ egress_rules:
   deny-example-ip:
     description: Allow internal traffic within the VPC
     priority: 2000
-    # enable_logging: true
+    enable_logging: true
     match:
       destination_ranges:
         - 1.2.3.4/32

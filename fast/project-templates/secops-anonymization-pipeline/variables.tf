@@ -87,7 +87,7 @@ variable "regions" {
     secondary = string
   })
   default = {
-    primary   = "europe-west1"
+    primary   = "europe-southwest1"
     secondary = "europe-west1"
   }
 }

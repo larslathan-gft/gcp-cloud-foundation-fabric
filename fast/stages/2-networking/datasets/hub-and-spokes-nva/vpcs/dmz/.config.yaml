@@ -35,7 +35,7 @@ routers:
         # "199.36.153.4/30": "restricted-googleapis-com"
 nat_config:
   nat-ew8:
-    region: europe-west1
+    region: europe-southwest1
 routes:
   rfc1918-10:
     dest_range: "10.0.0.0/8"

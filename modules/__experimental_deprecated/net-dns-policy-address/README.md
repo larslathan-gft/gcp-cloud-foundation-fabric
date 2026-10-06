@@ -10,7 +10,7 @@ Since it's currently impossible to fetch those addresses using a GCP data source
 module "dns-policy-addresses" {
   source     = "./fabric/modules/__experimental/net-dns-policy-addresses"
   project_id = "myproject"
-  regions    = ["europe-west1", "europe-west3"]
+  regions    = ["europe-southwest1", "europe-west1"]
 }
 # tftest skip (uses data sources)
 ```
@@ -24,7 +24,7 @@ The output is a map with lists of addresses of type `DNS_RESOLVER` for each regi
 | name | description | type | required | default |
 |---|---|:---:|:---:|:---:|
 | [project_id](variables.tf#L17) | Project id. | <code>string</code> | ✓ |  |
-| [regions](variables.tf#L22) | Regions to fetch addresses from. | <code>list&#40;string&#41;</code> |  | <code>&#91;&#34;europe-west1&#34;&#93;</code> |
+| [regions](variables.tf#L22) | Regions to fetch addresses from. | <code>list&#40;string&#41;</code> |  | <code>&#91;&#34;europe-southwest1&#34;&#93;</code> |
 
 ## Outputs
 

@@ -28,7 +28,7 @@ observability:
 projects:
   defaults:
     # prefix must be unique and less than 9 characters
-    prefix: test00
+    prefix: gft-lz-00
     locations:
       bigquery: $locations:primary
       logging: $locations:primary

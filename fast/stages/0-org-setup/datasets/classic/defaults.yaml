@@ -42,7 +42,7 @@ context:
     # this is the default group used in bootstrap, initial user must be a member
     gcp-organization-admins: group:gcp-organization-admins@example.com
   locations:
-    primary: europe-west1
+    primary: europe-southwest1
 output_files:
   # local path is optional but recommended when starting
   local_path: ~/fast-config/fast-test-00

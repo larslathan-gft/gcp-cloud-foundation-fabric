@@ -18,9 +18,9 @@ from:
   access_levels:
     - "*"
   identities:
-    - $iam_principals:service_agents/org/csc-hpsa
-    - $iam_principals:service_agents/org/ktd-hpsa
-    - $iam_principals:service_agents/org/security-center-api
+    - serviceAccount:service-org-109549842935@gcp-sa-csc-hpsa.iam.gserviceaccount.com
+    - serviceAccount:service-org-109549842935@gcp-sa-ktd-hpsa.iam.gserviceaccount.com
+    - serviceAccount:service-org-109549842935@security-center-api.iam.gserviceaccount.com
 to:
   operations:
     - service_name: "*"

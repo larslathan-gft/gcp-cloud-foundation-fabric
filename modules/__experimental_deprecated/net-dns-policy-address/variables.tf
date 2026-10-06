@@ -23,5 +23,5 @@ variable "regions" {
   description = "Regions to fetch addresses from."
   nullable    = false
   type        = list(string)
-  default     = ["europe-west1"]
+  default     = ["europe-southwest1"]
 }

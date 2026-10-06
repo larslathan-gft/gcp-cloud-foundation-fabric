@@ -64,8 +64,8 @@ context:
   # external definitions can be set here and used in context from YAML files
   # locations.primary is used by the default dataset, and should be defined
   locations:
-    primary: europe-west1
-    secondary: europe-west3
+    primary: europe-southwest1
+    secondary: europe-west1
 # defaults and overrides common to security projects should go here
 # defining storage_location is required
 projects:

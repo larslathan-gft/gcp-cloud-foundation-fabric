@@ -59,6 +59,7 @@ compute.restrictVpcPeering:
     - allow:
         values:
           - "under:organizations/${organization.id}"
+          - "projects/v6f8891f80b47b15cp-tp/global/networks/servicenetworking"
 
 # compute.restrictVpnPeerIPs:
 #   rules:

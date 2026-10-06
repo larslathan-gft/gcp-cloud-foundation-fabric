@@ -42,7 +42,7 @@ services:
 kms:
   keyrings:
     ew1:
-      location: europe-west1
+      location: europe-southwest1
       keys:
         logging:
           rotation_period: 7776000s
@@ -52,7 +52,7 @@ service_encryption_key_ids:
 log_buckets:
   _Default:
     retention: 90
-    location: europe-west1
+    location: europe-southwest1
   audit-logs:
     kms_key_name: $kms_keys:log-0/ew1/logging
     retention: 90
